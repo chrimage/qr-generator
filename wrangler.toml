@@ -1,0 +1,23 @@
+# Cloudflare Workers configuration for QR Generator
+
+name = "qr-generator"
+main = "src/index.js"
+compatibility_date = "2024-12-01"
+account_id = "42787465cd6e717769c0a5427e266a75"
+
+# Static assets configuration
+[assets]
+directory = "./dist"
+binding = "ASSETS"
+
+# Environment variables
+[env.production]
+name = "qr-generator"
+
+[env.staging]
+name = "qr-generator-staging"
+
+# Custom domain configuration for qr.bytecrash.xyz
+[[env.production.routes]]
+pattern = "qr.bytecrash.xyz/*"
+zone_name = "bytecrash.xyz"
