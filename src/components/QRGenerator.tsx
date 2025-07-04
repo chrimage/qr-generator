@@ -73,7 +73,7 @@ export function QRGenerator() {
             No Bullshit QR Generator
           </h1>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-            Create QR codes instantly. No ads, no tracking, no premium features. 
+            Create QR codes instantly for URLs, WiFi, contacts, and more. No ads, no tracking, no premium features. 
             Just pure functionality.
           </p>
         </div>
